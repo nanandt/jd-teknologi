@@ -34,24 +34,17 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Larry the Bird</td>
-                        <td>@twitter</td>
-                        <td>@twitter</td>
-                    </tr>
+                    @foreach($superHero as $sh)
+                        <tr>
+                            <th>{{$sh->id}}</th>
+                            <td>{{$sh->nama}}</td>
+                            <td>{{$sh->jk_kelamin}}</td>
+                            <td>
+                                <button class="btn btn-primary" type="button">View Detail</button>
+                                <button class="btn btn-danger" type="button">Hapus</button>
+                            </td>
+                        </tr>
+                    @endforeach
                     </tbody>
                 </table>
             </div>

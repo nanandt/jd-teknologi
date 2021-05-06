@@ -15,7 +15,7 @@ class CreateSuperHeroTable extends Migration
     {
         Schema::create('super_hero', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('nama');
             $table->string('jk_kelamin');
             $table->string('skill');
             $table->timestamps();
