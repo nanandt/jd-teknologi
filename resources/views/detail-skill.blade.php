@@ -14,8 +14,11 @@
         <div class="col-md-2"></div>
         <div class="col-md-8">
             <div class="row mt-5">
-                <div class="col-md-7">
-                    <h3>Daftar Super Hero</h3>
+                <div class="col-md-5">
+                    <h3>Daftar Skill</h3>
+                </div>
+                <div class="col-md-2">
+                    <a href="{{route('home')}}" class="btn btn-success">Back</a>
                 </div>
                 <div class="col-md-5">
                     <form class="d-flex" action="{{route('home.search.skill')}}" method="GET">
@@ -40,7 +43,6 @@
                                 <a href="{{ route('detail.skill.hero', $s->id) }}" class="btn btn-primary">
                                     View Detail
                                 </a>
-                                <button class="btn btn-danger" type="button">Hapus</button>
                             </td>
                         </tr>
                     @endforeach

@@ -60,4 +60,12 @@ class HomeController extends Controller
             'supers' => $supers
         ]);
     }
+
+    public function destroy($id){
+        $item = Superhero::find($id);
+
+        $item->delete();
+
+        return redirect('/');
+    }
 }

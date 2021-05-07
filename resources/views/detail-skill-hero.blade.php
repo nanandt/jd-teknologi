@@ -21,9 +21,10 @@
     <div class="col-md-8">
         <div class="row">
             <div class="col-md-8">
-                <h3>Detail Super Hero</h3>
+                <h3>Detail Skill : {{$skills->nama_skill}}</h3>
             </div>
             <div class="col-md-4 text-right">
+                <a href="{{route('detail.skill')}}" class="btn btn-success">Back</a>
                 <button class="btn btn-primary" type="button">Edit</button>
             </div>
         </div>
@@ -38,15 +39,6 @@
                     <tr>
                         <td>Nama</td>
                         <td><input type="text" class="form-control" value="{{$skills->nama_skill}}"></td>
-                    </tr>
-                    <tr>
-                        <td>Jenis Kelamin</td>
-                        <td>
-                            <select class="form-control">
-                                <option value="{{$skills->jk_kelamin}}">{{$skills->jk_kelamin}}</option>
-                                <option value="2">Wanita</option>
-                            </select>
-                        </td>
                     </tr>
                     </tbody>
                 </table>

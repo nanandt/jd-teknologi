@@ -15,7 +15,9 @@
         <div class="col-md-8">
             <div class="row mt-5">
                 <div class="col-md-6">
-                    <h3>Daftar Super Hero</h3>
+                    <h3>
+                        <a href="{{route('home')}}"> Daftar Super Hero</a>
+                    </h3>
                 </div>
                 <div class="col-md-2">
                     <form action="{{route('detail.skill')}}" method="get">
@@ -47,7 +49,13 @@
                                 <a href="{{ route('detail', $sh->id) }}" class="btn btn-primary">
                                     View Detail
                                 </a>
-                                <button class="btn btn-danger" type="button">Hapus</button>
+                                <form action="{{route('home.destroy', $sh->id)}}" method="POST">
+                                    @csrf
+                                    @method('delete')
+                                    <div class="d-flex">
+                                        <button class="btn btn-danger mr-2" type="submit">Hapus</button>
+                                    </div>
+                                </form>
                             </td>
                         </tr>
                     @endforeach
