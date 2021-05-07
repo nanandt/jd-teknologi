@@ -14,16 +14,11 @@
         <div class="col-md-2"></div>
         <div class="col-md-8">
             <div class="row mt-5">
-                <div class="col-md-6">
+                <div class="col-md-7">
                     <h3>Daftar Super Hero</h3>
                 </div>
-                <div class="col-md-2">
-                    <form action="{{route('detail.skill')}}" method="get">
-                        <button class="btn btn-success btn-sm" type="submit">Daftar Skill</button>
-                    </form>
-                </div>
-                <div class="col-md-4">
-                    <form class="d-flex" action="{{route('home.search')}}" method="GET">
+                <div class="col-md-5">
+                    <form class="d-flex" action="{{route('home.search.skill')}}" method="GET">
                         <input class="form-control me-2" type="search" name="search" id="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
@@ -31,20 +26,18 @@
                 <table class="table table-bordered">
                     <thead>
                     <tr>
-                        <th scope="col">NO</th>
-                        <th scope="col">Nama</th>
-                        <th scope="col">Jenis Kelamin</th>
+                        <th scope="col">#</th>
+                        <th scope="col">Nama Skill</th>
                         <th scope="col">Action</th>
                     </tr>
                     </thead>
                     <tbody>
-                    @foreach($superhero as $sh)
+                    @foreach($skills as $s)
                         <tr>
-                            <th>{{$sh->id}}</th>
-                            <td>{{$sh->nama_hero}}</td>
-                            <td>{{$sh->jk_kelamin}}</td>
+                            <th>{{$s->id}}</th>
+                            <td>{{$s->nama_skill}}</td>
                             <td>
-                                <a href="{{ route('detail', $sh->id) }}" class="btn btn-primary">
+                                <a href="{{ route('detail.skill.hero', $s->id) }}" class="btn btn-primary">
                                     View Detail
                                 </a>
                                 <button class="btn btn-danger" type="button">Hapus</button>
