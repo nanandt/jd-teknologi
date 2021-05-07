@@ -26,9 +26,6 @@
             <div class="col-md-2">
                 <a href="{{route('home')}}" class="btn btn-success">Back</a>
             </div>
-            <div class="col-md-4 text-right">
-                <button class="btn btn-primary" type="button">Edit</button>
-            </div>
         </div>
         <div class="row">
             <div class="col-md-12">

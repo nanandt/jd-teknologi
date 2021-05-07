@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6ae1b492-764f-4683-94dc-4e3cb02329bf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SuperHeroController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SuperHeroController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/detail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +158,8 @@
       <workItem from="1620305030851" duration="23174000" />
       <workItem from="1620354153178" duration="8124000" />
       <workItem from="1620362608800" duration="12319000" />
-      <workItem from="1620353118883" duration="412000" />
+      <workItem from="1620353118883" duration="600000" />
+      <workItem from="1620354102872" duration="60000" />
     </task>
     <servers />
   </component>
