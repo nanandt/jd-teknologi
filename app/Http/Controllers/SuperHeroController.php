@@ -30,12 +30,12 @@ class SuperHeroController extends Controller
 
     public function simpan(Request $request, $id)
     {
-        $super = $request->all();
+        $data = $request->all();
         $super = Superhero::find($id);
-        $skills = $super->skills()->attach(3);
-        $skills->save();
-
-        return redirect('/');
+        $skills = $super->skills()->create([
+            'nama_skill' => $data['nama_skill']
+        ]);
+        return redirect()->route('detail',$id);
     }
 
 }

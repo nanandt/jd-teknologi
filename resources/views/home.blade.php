@@ -16,7 +16,7 @@
             <div class="row mt-5">
                 <div class="col-md-6">
                     <h3>
-                        <a href="{{route('home')}}"> Daftar Super Hero</a>
+                        Daftar Super Hero
                     </h3>
                 </div>
                 <div class="col-md-2">

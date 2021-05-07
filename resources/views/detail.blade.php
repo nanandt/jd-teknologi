@@ -21,7 +21,10 @@
     <div class="col-md-8">
         <div class="row">
             <div class="col-md-8">
-                <h3>Detail Super Hero</h3>
+                <h3>Detail Super Hero : {{$supers->id}}</h3>
+            </div>
+            <div class="col-md-2">
+                <a href="{{route('home')}}" class="btn btn-success">Back</a>
             </div>
             <div class="col-md-4 text-right">
                 <button class="btn btn-primary" type="button">Edit</button>
@@ -33,7 +36,7 @@
                     <tbody>
                     <tr>
                         <td>ID</td>
-                        <td>{{$supers->nama_hero}}</td>
+                        <td>{{$supers->id}}</td>
                     </tr>
                     <tr>
                         <td>Nama</td>
@@ -50,7 +53,6 @@
                     </tr>
                     </tbody>
                 </table>
-                {{--                @forelse($superheros as $s)--}}
                 <table class="table table-bordered">
                     <thead>
                     <tr>
