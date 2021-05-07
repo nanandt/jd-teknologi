@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSuperHeroTable extends Migration
+class CreateSkillTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,9 @@ class CreateSuperHeroTable extends Migration
      */
     public function up()
     {
-        Schema::create('super_hero', function (Blueprint $table) {
+        Schema::create('skill', function (Blueprint $table) {
             $table->id();
-            $table->string('nama');
-            $table->string('jk_kelamin');
-            $table->string('skill');
+            $table->string('nama_skill');
             $table->timestamps();
         });
     }
@@ -29,6 +27,6 @@ class CreateSuperHeroTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('super_hero');
+        Schema::dropIfExists('skill');
     }
 }

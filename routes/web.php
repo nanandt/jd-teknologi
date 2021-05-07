@@ -1,5 +1,6 @@
 <?php
 
+use App\Superhero;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,3 +15,21 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'HomeController@home');
+Route::get('/detail/{id}', 'SuperHeroController@detail')->name('detail');
+Route::get('/tambah_skill/{id}', 'SuperHeroController@tambah')->name('tambah.skill');
+
+Route::get('/query', 'HomeController@search')->name('home.search');
+
+Route::post('/simpan_skill/{id}', 'SuperHeroController@simpan')->name('simpan.skill');
+
+Route::get('/males', function (){
+    $supers = Superhero::all();
+//    dd($super);
+foreach ($supers as $super){
+    echo $super->nama_hero;
+}
+//    $skills = $super->skills;
+//    foreach ($skills as $skill){
+//        echo $skill->nama_skill;
+//    }
+});

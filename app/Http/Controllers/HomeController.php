@@ -7,10 +7,24 @@ use App\Superhero;
 
 class HomeController extends Controller
 {
-    public function home(){
-        $superHero = Superhero::all();
+    public function home(Request $request)
+    {
+        $superhero = Superhero::all();
+//        dd($superhero);
         return view('home', [
-            'superHero' => $superHero
+            'superhero' => $superhero
+        ]);
+    }
+
+    public function search(Request $request)
+    {
+
+        $search = $request->search;
+
+        $superhero = Superhero::where('nama_hero','like','%'.$search.'%')->get();
+
+        return view('home', [
+            'superhero' => $superhero
         ]);
     }
 }

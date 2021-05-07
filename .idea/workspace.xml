@@ -2,19 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ae1b492-764f-4683-94dc-4e3cb02329bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/SuperHeroController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Superhero.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Skill.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_05_06_113737_create_skill_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_05_06_173430_create_skill_superhero_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/detail.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/tambah.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_05_06_062218_create_super_hero_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_05_06_062218_create_super_hero_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SuperHeroController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SuperHeroController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Superhero.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Superhero.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_05_06_062218_create_super_hero_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_05_06_062218_create_superhero_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
@@ -156,7 +162,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620252580146</updated>
-      <workItem from="1620252619615" duration="5206000" />
+      <workItem from="1620252619615" duration="5240000" />
+      <workItem from="1620300577974" duration="2333000" />
+      <workItem from="1620302971352" duration="2033000" />
+      <workItem from="1620305030851" duration="23174000" />
+      <workItem from="1620354153178" duration="8124000" />
+      <workItem from="1620362608800" duration="4933000" />
     </task>
     <servers />
   </component>
@@ -167,20 +178,21 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="517" y="292" key="NewPhpFileDialog" timestamp="1620253150845">
+    <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1620355010846">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="517" y="292" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1620253150845" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/views/home.blade.php</url>
-          <line>35</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1620355010846" />
+    <state x="517" y="292" key="NewPhpFileDialog" timestamp="1620358888865">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="517" y="292" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1620358888865" />
+    <state x="339" y="165" key="run.anything.popup" timestamp="1620318915757">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1620318915757" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1620359755289">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1620359755289" />
   </component>
 </project>
